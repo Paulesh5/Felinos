@@ -6,15 +6,15 @@ public class menuPrincipal {
         int op;
         String nombre, habitad, comida, habilidad;
         int edad;
-        double peso;
+        double peso, velocidad, tamanio;
 
         do {
             System.out.println("\n\t\t *** MENU PRINCIPAL ***");
             System.out.println("1. Leon");
             System.out.println("2. Tigre");
             System.out.println("3. Leopardo");
-            System.out.println("4. ");
-            System.out.println("5. ");
+            System.out.println("4. Guepardo");
+            System.out.println("5. Pantera");
             System.out.println("0. SALIR");
             System.out.print("Opcion: ");
             op = sc.nextInt();
@@ -63,9 +63,31 @@ public class menuPrincipal {
                     break;
                 }
                 case 4: {
+                    System.out.println("\n\t\t *** GUEPARDO ***\n");
+                    System.out.print("Nombre: ");
+                    nombre = sc.next();
+                    System.out.print("Edad: ");
+                    edad = sc.nextInt();
+                    System.out.print("Peso: ");
+                    peso = sc.nextDouble();
+                    System.out.print("Velocidad: ");
+                    velocidad = sc.nextDouble();
+                    Guepardo guepardo = new Guepardo(nombre,edad,peso,velocidad);
+                    guepardo.imprimirGuepardo();
                     break;
                 }
                 case 5: {
+                    System.out.println("\n\t\t *** PANTERA ***\n");
+                    System.out.print("Nombre: ");
+                    nombre = sc.next();
+                    System.out.print("Edad: ");
+                    edad = sc.nextInt();
+                    System.out.print("Peso: ");
+                    peso = sc.nextDouble();
+                    System.out.print("Tamaño: ");
+                    tamanio = sc.nextDouble();
+                    Pantera pantera = new Pantera(nombre,edad,peso,tamanio);
+                    pantera.imprimirPantera();
                     break;
                 }
                 case 0: {
