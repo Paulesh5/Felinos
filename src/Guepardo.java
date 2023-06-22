@@ -6,7 +6,7 @@ public class Guepardo extends Felino{
         this.velocidad = velocidad;
     }
     public void imprimirPantera(){
-        System.out.println("\n\t *** DATOS REGISTRADOS PANTERA ***\n");
+        System.out.println("\n\t *** DATOS REGISTRADOS GUEPARDO ***\n");
         System.out.println("Nombre: " + this.nombre);
         System.out.println("Edad: " + this.edad);
         System.out.println("Peso: " + this.peso);
